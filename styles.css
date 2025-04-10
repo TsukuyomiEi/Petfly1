@@ -226,33 +226,46 @@ nav a {
     max-width: 600px;
   }
 
+  .petfly-footer {
+    background-color: #011917;
+    padding: 25px 0; /* Aumenté el padding para mejor espaciado */
+    font-family: Arial, sans-serif;
+    color: white;
+    border-top: 1px solid #e7e7e7;
+}
 
-footer {
-
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     text-align: center;
-    padding: 10px;
-    background: #011917;
+    font-size: 16px; /* Aumenté de 14px a 16px (base) */
+    line-height: 1.8; /* Más espacio entre líneas */
+}
+
+.footer-content p {
+    margin: 8px 0; /* Mayor separación entre párrafos */
     color: white;
-    margin-top: 0;
+    font-size: 16px; /* Tamaño consistente */
+}
 
-  }
-
-
-footer p {
-    margin: 5px 0;
-    font-size: 14px;
-  }
-
-footer .socials {
-    margin-top: 10px;
-  }
-
-footer .socials a {
+.footer-content a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
-    font-size: 18px;
-  }
+    font-size: 16px; /* Enlaces del mismo tamaño */
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.copyright {
+    margin-top: 20px; /* Más espacio arriba */
+    font-weight: bold;
+    color: white;
+    font-size: 17px; /* Un poco más grande que el resto */
+}
 
   .app-banner-content {
     max-width: 1700px;
