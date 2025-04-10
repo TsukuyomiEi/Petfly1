@@ -216,28 +216,27 @@ nav a {
     font-size: 32px;
   }
 
+.booking h4 {
+    font-size: 22px;
+}
+
 .booking p {
     margin: 20px auto;
-    font-size: 16px;
+    font-size: 500px;
     max-width: 600px;
   }
 
-.booking button {
-    background-color: #f26c6c;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
-  }
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 30px 50px;
+
     text-align: center;
+    padding: 10px;
+    background: #011917;
+    color: white;
+    margin-top: 0;
+
   }
+
 
 footer p {
     margin: 5px 0;
