@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff9f5;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #444444;
+  }
+
+.logo span {
+    color: #23cbc0;
+  }
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #23cbc0;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s;
+
+  }
+  nav a:hover {
+    background-color: #ffffff;
+    color: #16493ada;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+  }
+
+.hero-text {
+    max-width: 500px;
+  }
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #000000;
+  }
+
+.hero-text span {
+    color: #23cbc0;
+  }
+
+.hero-text p {
+    margin: 17px 0;
+    font-size: 32px;
+    color: #000000;
+  }
+
+.hero-text button {
+    background-color: #f26c6c;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 130px;
+  }
+
+.hero-text button:hover{
+  background-color: #7a0a0a;
+    color: #ffffff;
+
+}
+
+.hero-image {
+    width: 700px;
+    height: 700px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgb(98, 255, 229);
+    border-radius: 100px;
+  }
+
+.hero-image img {
+    width: 1000px;
+    height: 60vh;
+    
+  }
+
+.cards {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+  }
+
+.card {
+    background: rgb(255, 255, 255);
+    padding: 38px;
+    border-radius: 20px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #93eee8;
+  }
+
+.card h3 {
+    margin-top: 15px;
+    color: #333;
+    font-size: 25px;
+  }
+
+.card p {
+    color: #024a45;
+    font-size: 19px;
+  }
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px;
+  }
+
+.info-header {
+    max-width: 600px;
+  }
+
+.info-header h2 {
+    font-size: 36px;
+    color: #000000;
+  }
+
+  .info-header h4 {
+    font-size: 27px;
+    color: #000000;
+  }
+
+.info-header p {
+    color: #000000;
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+.accordion {
+    margin-top: 30px;
+  }
+
+.accordion-item {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+
+.accordion-header {
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #e0f8f6;
+    border-left: 5px solid orange;
+    font-size: 22px;
+  }
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+    color: #555;
+    font-size: 17px;
+  }
+
+.booking {
+    background-color: #2db7a8;
+    color: white;
+    padding: 60px 50px;
+    text-align: center;
+  }
+
+.booking h2 {
+    font-size: 32px;
+  }
+
+.booking p {
+    margin: 20px auto;
+    font-size: 16px;
+    max-width: 600px;
+  }
+
+.booking button {
+    background-color: #f26c6c;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 50px;
+    text-align: center;
+  }
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+footer .socials {
+    margin-top: 10px;
+  }
+
+footer .socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .app-banner-content {
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .app-banner-text {
+    flex: 1 1 300px;
+    text-align: center;
+  }
+  
+  .app-banner-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .app-banner-text strong {
+    color: #011917;
+    font-weight: 800;
+  }
+  
+  .store-buttons img {
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .store-buttons img:hover {
+    transform: scale(1.05);
+  }

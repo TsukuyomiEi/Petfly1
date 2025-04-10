@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Care Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">P<span>etfly App</span></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">¿Quiénes somos?</a>
+
+    </nav>
+    <div class="contact">
+        <a href="https://www.instagram.com/petflypro/">
+            <img src="Imagenes/instagram.png" alt="Instagram" width="40">
+        </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-image">
+      <img src="Imagenes/fondo12.png" alt="Cute Dog">
+    </div>
+    <div class="hero-text">
+      <h4>Happy Pets, Happy Hearts</h4>
+      <h1>Bienvenido a <span>Petfly App</span><br>Tu lugar de <span>Confianza</span></h1>
+      <p>En esta página te contaremos en que consiste y todo lo que tiene <b>Petfly App</b> para ofrecerte.</p>
+      <a href="https://www.figma.com/proto/dF9bR1yuqmGMpUGhlSGHSA?node-id=0:1">
+        <button id="callBtn">Conócenos</button>
+      </a>
+  </section>
+
+  <section class="cards">
+    <div class="card" onclick="showInfo('Cuida de tu perrito.')">
+      <h3>Tienda</h3>
+      <p><b>Descubre una variedad de artículos de higiene, snacks y accesorios diseñados para consentir a tu mascota.</b></p>
+    </div>
+    <div class="card" onclick="showInfo('Dale siempre lo mejor.')">
+      <h3>Chatbot</h3>
+      <p><b>Tu asesor inteligente para resolver dudas y crear recetas personalizadas para tu perrito.</b></p>
+    </div>
+    <div class="card" onclick="showInfo('Llénalo de amor y cariño.')">
+      <h3>Comunidades</h3>
+      <p><b>Únete a comunidades donde podrás compartir experiencias, consejos y anécdotas sobre el cuidado de tu mejor amigo.</b></p>
+    </div>
+    <div class="card" onclick="showInfo('Con Petfly, te ofrecemos eso y mas.')">
+      <h3>Usuario Premium</h3>
+      <p><b>Con la suscripción premium, accede a un chatbot exclusivo y envíos gratis para tus compras.</p>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="info-header">
+      <h4><b>¿Por qué elegir Petfly App?</b></h4>
+      <h2>Petfly App es una aplicación muy completa e innovadora.</h2>
+    </div>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">¿<b>Petfly App</b> me ayudará a saber más sobre el cuidado de mi canino?</div>
+        <div class="accordion-content">Si, la verdad es que Petfly App contará con una gran red de información en donde podrás enterarte sobre todo tipo de cuidados necesarios para que  
+            tu perro se sienta de maravilla, además de que incluso podrás llevar un control personal de tu canino.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">¿Acaso en <b>Petfly App</b> podré comprar su producto estrella?</div>
+        <div class="accordion-content">Si, ya que <b>Petfly</b> cuenta con un apartado de tienda donde no solo podrás comprar nuestro producto estrella "Galletas Armadura Digestiva"
+            sino que además tenemos nuestras variantes como "Patas de Titanio" y "Superalimento", y muchos productos más que están en nuestro catálogo.
+         
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">¿Que otras cosas tiene <b>Petfly App</b> para ofrecerme?</div>
+        <div class="accordion-content">No te quedes solo con lo que te contamos aquí, ya que esto solo es la punta del iceberg, en <b>Petfly App</b> estamos en constante cambio
+         y tenemos muchas cosas que queremos mostrarles a nuestros queridísimos usuarios así que, ¿que esperas? Pásate a descargar nuestra App.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking">
+    <h4>Instala la App justo aquí.</h4>
+    <h2>Petfly App ahora disponible en:</h2>
+    <div class="store-buttons">
+        <a href="https://www.figma.com/proto/dF9bR1yuqmGMpUGhlSGHSA?node-id=0:1">
+          <img src="Imagenes/appstore.png" alt="App Store" width="230">
+          <img src="Imagenes/googleplay.png" alt="Google Play" width="230">
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Petfly. Todos los derechos reservados.</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/petflypro/">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('callBtn').addEventListener('click', function() {
+    alert('Calling the Pet Care Center...');
+  });
+
+  function showInfo(serviceName) {
+    alert(`Recuerda: ${serviceName}`);
+  }
+
+  function toggleAccordion(header) {
+    const content = header.nextElementSibling;
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function bookNow() {
+    alert('Booking your pet service!');
+  }
+
+  window.addEventListener('scroll', function() {
+    document.querySelectorAll('.card').forEach(card => {
+      const cardTop = card.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      if (cardTop < windowHeight - 100) {
+        card.classList.add('show');
+      }
+    });
+  });
+  </script>
+
+</body>
+</html>
