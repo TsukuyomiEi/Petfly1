@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #fff9f5;
-    background-image: url('Imagenes/patron.jpg');
+    background-image: url('Imagenes/patron8.jpg');
     background-repeat: repeat;
     background-size: auto;
   }
@@ -20,6 +20,7 @@ body {
   .booking,
   nav a {
     transition: background-color 0.5s ease, color 0.5s ease;
+    
   }
   
 header {
@@ -54,7 +55,7 @@ nav a {
     font-size: 20px;
     background-color: #ffffff;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.5s;
 
   }
   nav a:hover {
@@ -84,7 +85,7 @@ nav a {
     font-size: 20px;
     background-color: #1e1e1e;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.5s;
 
   }
   .dark-mode nav a:hover {
@@ -118,11 +119,8 @@ nav a {
 
 .hero-text span {
     color: #23cbc0;
-    text-shadow:
-    -1px -1px 0 #000000,
-     1px -1px 0 #000000,
-    -1px  1px 0 #000000,
-     1px  1px 0 #000000;
+    
+    
   }
 
 .hero-text p {
@@ -484,6 +482,7 @@ nav a {
     color: white;
     padding: 60px 50px;
     text-align: center;
+    padding-right: 800px;
   }
 
 .booking h2 {
@@ -613,7 +612,7 @@ nav a {
 
   footer {
     background-color: #000000;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 30px 20px 10px 20px;
   }
 
@@ -629,7 +628,7 @@ nav a {
   .footer-section {
     flex: 1;
     min-width: 180px;
-    margin: 10px;
+    margin: 2px;
   }
 
   .footer-section h3 {
@@ -640,6 +639,10 @@ nav a {
   .footer-section p {
     font-size: 0.9em;
   }
+  .footer-section li {
+    font-size: 0.9em;
+  }
+
 
   .logo {
     font-weight: bold;
@@ -681,13 +684,14 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  box-shadow: 0px 0px 0px 4px rgba(111, 241, 209, 0.945);
   cursor: pointer;
   transition-duration: 0.3s;
   overflow: hidden;
   position: relative;
-  margin-top: 170px;
-  margin-right: 20px;
+  margin-top: 180px;
+  margin-right: 50px;
+  
 }
 
 .svgIcon {
@@ -699,41 +703,13 @@ nav a {
   fill: white;
 }
 
-.button:hover {
-  width: 140px;
-  border-radius: 50px;
-  transition-duration: 0.3s;
-  background-color: rgb(181, 160, 255);
-  align-items: center;
-}
 
-.button:hover .svgIcon {
-  /* width: 20px; */
-  transition-duration: 0.3s;
-  transform: translateY(-200%);
-}
 
-.button::before {
-  position: absolute;
-  bottom: -20px;
-  content: "Back to Top";
-  color: white;
-  /* transition-duration: .3s; */
-  font-size: 0px;
-}
-
-.button:hover::before {
-  font-size: 13px;
-  opacity: 1;
-  bottom: unset;
-  /* transform: translateY(-30px); */
-  transition-duration: 0.3s;
-}
 
 body.dark-mode {
   background-color: #121212;
   color: #f5f5f5;
-  background-image: url("Imagenes/patron5.jpg"); /* O cambia el fondo */
+  background-image: url("Imagenes/fondodark.jpg"); /* O cambia el fondo */
 }
 
 .dark-mode header {
@@ -1046,3 +1022,51 @@ body.dark-mode {
   }
 }
 
+.logof{
+  justify-content: center;
+  margin-left: 100px;
+}
+
+/* From Uiverse.io by DhogMiT10 */ 
+.playstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  font-weight: 600;
+}
