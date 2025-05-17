@@ -478,65 +478,98 @@ nav a {
       font-size: 17px;
     }
 
-.booking {
-    background-color: #2db7a8;
-    color: white;
-    padding: 60px 50px;
-    text-align: center;
-    padding-right: 800px;
-  }
 
-.booking h2 {
-    font-size: 32px;
-  }
 
-.booking h4 {
-    font-size: 22px;
-}
+  .section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-.booking p {
-    margin: 20px auto;
-    font-size: 500px;
-    max-width: 600px;
-  }
+    .text-content {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+    .text-content b {
+      
+      color: #04c4b7;
+    }
 
-  .app-banner-content {
-    max-width: 1700px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .app-banner-text {
-    flex: 1 1 300px;
-    text-align: center;
-  }
-  
-  .app-banner-text h2 {
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .app-banner-text strong {
-    color: #011917;
-    font-weight: 800;
-  }
-  
-  .store-buttons img {
-    height: 100px;
-    margin-right: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  
-  .store-buttons img:hover {
-    transform: scale(1.05);
-  }
+    .text-content h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .text-content p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #000000;
+    }
+
+    .dark-mode .text-content p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #33c98f;
+    }
+
+    .cta-button {
+      background-color: #24795b;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 30px;
+      margin-left: 140px;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #60c5a2;
+    }
+
+    .note {
+      margin-top: 25px;
+      font-size: 0.9em;
+      color: #333;
+    }
+
+    .image-content {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .image-content img {
+      max-width: 800px;
+      width: 500px;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .text-content h1 {
+        font-size: 2em;
+      }
+
+      .cta-button {
+        width: 100%;
+      }
+    }
 
   .carousel-container {
     position: relative;
@@ -614,72 +647,9 @@ nav a {
     background-color: #23cbc0;
   }
 
-  /* footer {
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    padding: 30px 20px 10px 20px;
-  }
-
-  .footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    border-bottom: 2px solid #00796b;
-    padding-bottom: 20px;
-  }
-
-  .footer-section {
-    flex: 1;
-    min-width: 180px;
-    margin: 2px;
-  }
-
-  .footer-section h3 {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-  }
-
-  .footer-section p {
-    font-size: 0.9em;
-  }
-  .footer-section li {
-    font-size: 0.9em;
-    list-style: none;
-    
-  } */
 
 
-  .logo {
-    font-weight: bold;
-    font-size: 1.3em;
-    margin-left: 150px;
-    
-  }
-
-  .footer-bottom {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 0.9em;
-  }
-
-  .footer-bottom a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-
-  .footer-bottom a:hover {
-    text-decoration: underline;
-  }
-
-.copyright {
-    margin-top: 20px; /* Más espacio arriba */
-    font-weight: bold;
-    color: white;
-    font-size: 17px; /* Un poco más grande que el resto */
-}
-
+ 
 .button {
   width: 50px;
   height: 50px;
@@ -713,6 +683,7 @@ nav a {
 
 
 body.dark-mode {
+  background-image: url(Imagenes/fondodark.jpg);
   background-color: #121212;
   color: #f5f5f5;
   /* O cambia el fondo */
@@ -1033,26 +1004,7 @@ body.dark-mode {
   margin-left: 100px;
 }
 
-/* From Uiverse.io by DhogMiT10 */ 
-.playstore-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #000;
-  border-radius: 9999px;
-  background-color: rgba(0, 0, 0, 1);
-  padding: 0.625rem 1.5rem;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-  outline: 0;
-  transition: all 0.2s ease;
-  text-decoration: none;
-}
 
-.playstore-button:hover {
-  background-color: transparent;
-  color: rgba(0, 0, 0, 1);
-}
 
 .icon {
   height: 1.5rem;
@@ -1209,89 +1161,9 @@ button:hover {
   border: 2px solid #FFD700;
 }
 
-/* Asegúrate de incluir Font Awesome */
-
-
-/* .site-footer {
-  background-color: #264653;
-  color: #fff;
-  padding: 40px 20px 20px;
-  font-family: Arial, sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.footer-col {
-  flex: 1 1 200px;
-}
-
-.footer-col h4 {
-  margin-bottom: 15px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-col ul li {
-  margin-bottom: 10px;
-}
-
-.footer-col ul li a {
-  color: #ccc;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-col ul li a:hover {
-  color: #fff;
-}
-
-.social-icons a {
-  color: #ccc;
-  font-size: 18px;
-  margin-right: 10px;
-  transition: color 0.3s;
-}
-
-.social-icons a:hover {
-  color: #fff;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid #445a69;
-  margin: 30px 0 10px;
-}
-
-.footer-bottom {
-  text-align: center;
-  font-size: 13px;
-  color: #bbb;
-}
-
-.footer-bottom a {
-  color: #aaa;
-  text-decoration: none;
-}
-
-.footer-bottom a:hover {
-  color: #fff;
-} */
-
 
 footer {
-      background-color: #111;
+      background-color: #000000;
       padding: 40px 20px;
       text-align: center;
     }
@@ -1375,3 +1247,4 @@ footer {
         text-align: center;
       }
     }
+
